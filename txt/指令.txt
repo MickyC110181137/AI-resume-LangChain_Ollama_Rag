@@ -1,0 +1,32 @@
+conda create -n <env_name> python=3.8
+conda activate <env_name>
+conda env remove --name <env_name>
+
+pip install -r requirements.txt
+pip install -U langchain-ollama
+
+flask 教學
+https://medium.com/@kenAaa/python-flask-%E6%A1%86%E6%9E%B6%E5%88%9D%E6%8E%A2-%E7%A8%8B%E5%BC%8F%E5%B0%8F%E7%99%BD%E4%B9%9F%E8%83%BD%E4%B8%8A%E6%89%8B%E7%9A%84api%E5%AF%A6%E4%BD%9C-bafd8aa2edfe
+
+嵌入:
+https://docs.openwebui.com/tutorial/rag/
+
+openwebui Github rag:
+https://github.com/open-webui/open-webui/blob/2fa94956f4e500bf5c42263124c758d8613ee05e/backend/apps/rag/main.py#L328
+
+Langchain ollama
+https://python.langchain.com/v0.2/docs/integrations/llms/ollama/
+
+api暫時只有raw的json格式
+get http://127.0.0.1:5000/user
+post http://127.0.0.1:5000/user
+{
+    "name":"Micky"
+}
+post http://127.0.0.1:5000/user/Micky/message
+{
+    "message": "08/17 03:19pm"
+}
+
+ollama
+https://github.com/ollama/ollama-python

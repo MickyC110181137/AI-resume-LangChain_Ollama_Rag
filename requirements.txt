@@ -1,0 +1,6 @@
+Flask
+ollama
+chromadb
+langchain-ollama
+langchain-community
+langchain-openai

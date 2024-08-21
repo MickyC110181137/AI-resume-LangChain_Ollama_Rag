@@ -1,0 +1,5 @@
+pip install -qU langchain-ollama
+pip install openai
+pip install langchain-openai
+pip install sentence-transformers
+conda install -c conda-forge faiss-gpu
