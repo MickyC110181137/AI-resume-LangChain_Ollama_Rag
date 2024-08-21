@@ -38,7 +38,7 @@ response = ollama.embeddings(
 # n_results=1 表示我們希望檢索到最相關的一個文檔。
 results = collection.query(
     query_embeddings=[response["embedding"]],
-    n_results=5
+    n_results=1
 )
 # 這行代碼從查詢結果 results 中提取最相關的文檔內容。results['documents'] 是一個包含文檔的列表，
 # [0][0] 表示我們取第一個結果中的第一個文檔

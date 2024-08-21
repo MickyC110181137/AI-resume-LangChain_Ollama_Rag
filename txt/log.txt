@@ -1,0 +1,11 @@
+8/15
+用Open WebUI跟docker 把 Ollama直接部屬一個本地網頁，有聊天窗口跟rag功能，這樣可以很好的測試RAG的功能。
+我在看要不要用ollama的api https://github.com/ollama/ollama-js 可以直接用js呼叫，這樣部屬會比較簡單。
+這樣我的部分就剩一個RAG了，還有蒐集資料
+在嘗試使用unsloth微調LLM，unsloth是一個線上的微調工具。
+
+8/21
+目前進度是本地Flask.py與Ollama.py初版完成
+ollamaRag.py是目前完成度最高的RAG,但是目前有一個問題是向量搜尋,他會搜尋最相近的句子,但是缺少了上下文關係,導致雖然有回答道我的問題,但是只回答了一點
+我試著使用langchain的chunk_size與chunk_overlap,因為LangChain迭代太快,之前的程式需要更新網上的資料太混亂,還在找怎麼做比較快速正確
+(chunk_size是分割的大小，chunk_overlap是重疊的部分)
