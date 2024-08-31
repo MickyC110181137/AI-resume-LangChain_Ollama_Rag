@@ -5,6 +5,7 @@ import chromadb
 with open("./rag/crew.txt", "r") as file:
     documents = file.readlines()
 
+
 client = chromadb.Client()
 collection = client.create_collection(name="docs")
 # print(documents)

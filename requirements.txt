@@ -3,4 +3,5 @@ ollama
 chromadb
 langchain-ollama
 langchain-community
-langchain-openai
+sentence_transformers 
+langchain-huggingface
