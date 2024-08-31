@@ -86,7 +86,6 @@ prompt = ChatPromptTemplate.from_messages([
               '請自己判斷上下文來回答問題, 不要盲目地使用工具'),
     MessagesPlaceholder(variable_name="chat_history"),
     ('human','{input}'),
-    MessagesPlaceholder(variable_name="agent_scratchpad")
 ])
 
 str_parser = StrOutputParser()
@@ -104,14 +103,5 @@ chain = (
 )
 
 print(chain.invoke("曾任漁船普通船員資歷滿一年以上。請問是否具有船員資格。"))
-# while True:
-#     msg = input("我說：")
-#     if not msg.strip():
-#         break
-#     for chunk in memory_chain.stream(
-#         {"input": msg},
-#         config={"configurable": {"session_id": "test_id"}}):
-#         if 'output' in chunk:
-#             print(f"AI 回覆：{chunk['output']}", end="", flush=True)
-#     print('\n')
-
+# for chunk in chain.stream("曾任漁船普通船員資歷滿一年以上。請問是否具有船員資格。"):
+#     print(chunk, end="", flush=True)

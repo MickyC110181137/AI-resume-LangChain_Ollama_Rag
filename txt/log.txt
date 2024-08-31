@@ -43,3 +43,4 @@ chain = (
     | str_parser
 )問答
 print(chain.invoke("曾任漁船普通船員資歷滿一年以上。請問是否具有船員資格。"))
+
