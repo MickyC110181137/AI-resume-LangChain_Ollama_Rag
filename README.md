@@ -12,22 +12,14 @@ pip uninstall torch torchvision torchaudio
 pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0
 Initially, I got this problem after the installation of torchvision, torch was working fine before that.
 fbgemm.dll
-
 完成LangChain-Ollama完全本地的RAG初版
-
 使用Ollama3.1作為聊天模型
-
 使用sentence-transformers/all-MiniLM-L6-v2作為文字分割模型
-
 使用RecursiveCharacterTextSplitter文字分割
-
 使用Chroma設定向量資料庫(from langchain_community.vectorstores import Chroma)
-
 使用retriever = db.as_retriever(search_type="similarity",
                             search_kwargs={"k": 6})設定檢索資料
-
 使用from langchain_core.prompts import ChatPromptTemplate設定聊天提示模板
-
 最後使用
 chain = (
     {"context": retriever, "question": RunnablePassthrough()}
