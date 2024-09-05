@@ -1,8 +1,2 @@
 https://minglunwu.com/notes/2021/flask_plus_wsgi.html/
 
-測試sentence_transformers
-pip install ultralytics
-pip install torch
-pip install sentence_transformers
-
-conda install -c conda-forge sentence-transformers

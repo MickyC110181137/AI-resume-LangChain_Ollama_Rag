@@ -1,8 +1,6 @@
-Flask
 ollama
 chromadb
 langchain-ollama
 langchain-community
 sentence_transformers 
 langchain-huggingface
-langgraph

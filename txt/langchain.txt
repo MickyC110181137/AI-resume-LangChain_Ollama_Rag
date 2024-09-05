@@ -3,3 +3,10 @@ pip install openai
 pip install langchain-openai
 pip install sentence-transformers
 conda install -c conda-forge faiss-gpu
+
+測試sentence_transformers
+pip install ultralytics
+pip install torch
+pip install sentence_transformers
+
+conda install -c conda-forge sentence-transformers
